@@ -12,6 +12,9 @@ body {
   width: 70px;
   border: 2px solid black;
   border-radius: 50%;
+  right: 450px;
+  bottom: 150px;
+  position: absolute;
 }
 
 #pokeball:hover {
@@ -19,6 +22,18 @@ body {
   border: 4px solid red;
 }
 
-#player {}
+#player {
+  display: block;
+  left: 680px;
+  top: 750px;
+  position: absolute;
+}
 
-#cpu {}
+#cpu {
+  display: block;
+  left: 680px;
+  top: 200px;
+  position: absolute;
+
+
+}

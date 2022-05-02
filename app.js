@@ -23,8 +23,6 @@ let fire = pokemon[0].type;
 let water = pokemon[1].type;
 let grass = pokemon[2].type;
 
-
-// let playerPokemon = {}
 const choice1 = () => {
   container.innerHTML = ''
   let newImg = document.createElement('img')
@@ -34,9 +32,7 @@ const choice1 = () => {
   container.appendChild(newImg)
   return pokemon[randomNum]
 }
-// pokeball.addEventListener('click', choice1)
 
-// let cpuChoice = {}
 const cpuPokemon = () => {
   let newImg2 = document.createElement('img')
   newImg2.setAttribute('id', 'cpu')
@@ -57,27 +53,32 @@ function battle() {
   if (playerPokemon.type === cpuChoice.type) {
     console.log('draw')
   } else if (playerPokemon.type === fire && cpuChoice.type === grass) {
-    playerImg.style.width = '280px';
-    playerImg.style.height = '280px';
+    playerImg.style.width = '300px';
+    playerImg.style.height = '300px';
+    console.log('You Won!')
   } else if (playerPokemon.type === water && cpuChoice.type === fire) {
     playerImg.style.width = '200px';
     playerImg.style.height = '200px';
+    console.log('You Won!')
   } else if (playerPokemon.type === grass && cpuChoice.type === water) {
     playerImg.style.width = '200px';
     playerImg.style.height = '200px';
+    console.log('You Won!')
   } else if (playerPokemon.type === grass && cpuChoice.type === fire) {
-    cpuImg.style.width = '280px'
-    cpuImg.style.height = '280px'
+    cpuImg.style.width = '300px'
+    cpuImg.style.height = '300px'
+    console.log('You Lost!')
   } else if (playerPokemon.type === fire && cpuChoice.type === water) {
     cpuImg.style.width = '200px'
     cpuImg.style.height = '200px'
+    console.log('You Lost!')
   } else if (playerPokemon.type === water && cpuChoice.type === grass) {
     cpuImg.style.width = '200px'
     cpuImg.style.height = '200px'
+    console.log('You Lost!')
   }
 }
 
-// pokeball.addEventListener('click', cpuPokemon)
 pokeball.addEventListener('click', battle)
 
 
