@@ -34,6 +34,15 @@ body {
   left: 680px;
   top: 200px;
   position: absolute;
+}
 
+.pokeImg {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
 
+h1 {
+  text-align: center;
+  font-size: 70px;
 }
